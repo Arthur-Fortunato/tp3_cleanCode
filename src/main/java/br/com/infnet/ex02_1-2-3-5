@@ -1,0 +1,12 @@
+1. tem dois métodos na classe Task: alterarStatus e atribuirResponsavel
+
+2. ambos os métodos alteram diretamente o estado do meu objeto(exatamente onde o nome das funções sugerem)
+
+3. qualquer parte do código que faça referência a essa task em específico vai ter o estado dela alterado sem perceber, se dois
+usuários chamarem uma das funções ao mesmo tempo, uma atualização ou uma atribuição pode acabar sobrescrevendo a outra exibindo dados incoerentes...
+
+a questão 4 foi feita mudando as funções dentro da classe Task
+
+5. com as mudanças feitas, o objeto original não muda, a gente agora cria uma nova instância do objeto com o valor atualizado. Agora que o código está
+realmente imutável, vários usuários podem acessar a mesma instância sem qualquer risco de sobrescrever dados, agora dá para
+comparar os estados(atual e anterior)

@@ -1,0 +1,3 @@
+A imutabilidade ajuda a evitar problemas de concorrência, onde várias threads podem tentar acessar o mesmo dado simultaneamente,
+facilita a depuração permitindo rastrear os erros sem a confusão que podem aparecer com os dados mutáveis, além disso, ela promove
+o paralelismo e a concorrência, permitindo que processos operem de maneira mais eficiente e sem problemas de "corrida".
