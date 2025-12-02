@@ -1,0 +1,8 @@
+4. Supondo que eu criei uma subtask nova e com 5 horas estimadas para o termino. Quando eu chamar o método: atualizarHorasEstimadas(10),
+vou criar uma nova instância da minha subtask, porém com 10 horas estimadas, a original continua inalterada justamente porque
+a classe é imutável, não tem setter, os atributos são final e qualquer atualização que for feita vai exigir a criação de um novo objeto
+
+5. A auditoria é facilitada porque cada versão permanece intacta, o que faz a gente conseguir rastrear como a estimativa evoluiu.
+Como o objeto original nunca é alterado, é possível comparar o estado antigo com o novo sem perder informação.
+Além disso, a imutabilidade previne problemas de concorrência: dois usuários podem atualizar subtasks simultaneamente,
+sem que uma alteração sobrescreva a outra, já que cada mudança gera uma instância nova
