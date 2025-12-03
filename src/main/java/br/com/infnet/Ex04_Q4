@@ -1,0 +1,6 @@
+3. Usei o Long para o id porque ele suporta grandes valores.
+Usei String para a descrição porque ele armazena textos.
+LocalDateTime me permite gravar exatamente a data e a hora da criação do registro.
+O Enum TipoAtividade eu usei para limitar os valores de classificação da atividade, acaba sendo bem melhor do que usar uma
+String solta ou um inteiro solto(o que seria ainda pior) para representar o valor.
+O BigDecimal é mais preciso do que o double, garantindo resultados mais consistentes caso eu precise realizar algum cálculo.

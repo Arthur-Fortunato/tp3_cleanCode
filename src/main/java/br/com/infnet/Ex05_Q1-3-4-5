@@ -1,0 +1,15 @@
+1. apliquei a injeção de dependencia na classe TaskService via construtor, os benefícios de utilizar a injeção de dependência é: facilidade
+na criação de testes unitários, baixo acoplamento, código mais modular...
+
+3. Um exemplo que está no próprio código é a classe User, várias outras classes poderiam extender dela, ela serviria como uma
+base para as outras. A herança possui um fraco encapsulamento e o forte acoplamento, se precisar fazer alguma alteração na superclasse pode
+acabar impactando nas subclasses.
+A composição é melhor quando temos certeza que as alterações feitas na superclasse não impactam negativamente nas subclasses,
+caso as alterações impactem diretamente de forma negativa é mais fácil usar composição
+
+4. Classes de domínio são os conceitos principais do sistema, elas n tem regras de negócio complexas e desconhecem repositórios,
+serviços...
+A classe de Serviço executa lógicas mais complexas, é aqui que ficam as regras de negócio do código.
+A classe de repositório apenas cuida da persistencia dos dados no banco ou em memória
+
+5. as datas da classe de sprint poderiam ser colocadas dentro de uma classe chamada Periodo/Data/Tempo...
